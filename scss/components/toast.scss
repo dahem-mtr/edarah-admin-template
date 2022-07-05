@@ -1,0 +1,15 @@
+.toast-position {
+  position: fixed;
+  z-index: 1002;
+  pointer-events: none;
+  top: 3px;
+  right: 3px;
+  [dir="rtl"] & {
+    right: auto;
+    left: 3px;
+  }
+  .toast {
+    pointer-events: none;
+    margin-bottom: 3px;
+  }
+}

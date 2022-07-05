@@ -1,0 +1,20 @@
+
+.modal .modal-content {
+    .modal-header {
+        border-bottom-color: $border-color;
+    }
+    .modal-footer {
+        border-top-color: $border-color;
+    }
+}
+
+body.dark-mode .modal .modal-content {
+    background-color:$dark-bg-color ;
+    .modal-header {
+        border-bottom-color: $dark-border-color;
+    }
+    .modal-footer {
+        border-top-color: $dark-border-color;
+    }
+    
+}

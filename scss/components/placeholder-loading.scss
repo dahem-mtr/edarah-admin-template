@@ -1,0 +1,25 @@
+.ph-item {
+  border-color: $border-color !important;
+display: block ;
+border-radius:4px;
+        [dir="rtl"] & {
+  flex-direction: row-reverse;
+
+            .ph-row {
+                direction:rtl;
+                
+            }
+          }
+    
+}
+
+
+
+body.dark-mode .ph-item {
+    border-color: $dark-border-color !important;
+    background-color: $dark-bg-color;
+    .ph-row div ,.ph-picture {
+        background-color: black;
+
+    }
+}

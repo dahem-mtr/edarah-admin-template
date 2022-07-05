@@ -1,0 +1,50 @@
+.form-control,
+.form-select {
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: black !important;
+  }
+}
+
+.form-check-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: none !important;
+}
+
+.form-control,
+.form-select {
+  color: black;
+  border-color: silver;
+  [dir="rtl"] & {
+    direction: rtl;
+  }
+}
+.form-check-input {
+  border-color: silver !important;
+}
+
+body.dark-mode {
+  .form-control,
+  .form-select,
+  .form-check-input {
+    background-color: black !important;
+
+    border-color: $dark-border-color !important;
+    color: white;
+    &:focus {
+      border-color: silver !important;
+    }
+  }
+
+  .form-control:is([disabled]) {
+    background-color: $dark-bg-color !important;
+  }
+  .form-check-input:is([disabled]) {
+    background-color: $dark-bg-color !important;
+  }
+  .form-select:is([disabled]) {
+    background-color: $dark-bg-color !important;
+  }
+}

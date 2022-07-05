@@ -1,0 +1,28 @@
+
+.information {
+    display: flex;
+    justify-content:space-between;   
+    .information-content{
+        white-space:nowrap;
+        .information-title {
+            color: $information-title-color;
+        }
+    }
+    .information-icon {
+        display: flex;
+        padding: 10px;
+        justify-content:center;
+        align-items:center;
+        font-size:60px;
+        color:$information-icon-color;
+    }
+}
+
+body.dark-mode .information .information-content{
+    .information-title {
+        color: $dark-text-color !important;
+    }
+.information-icon {
+    color: $dark-text-color-third !important;
+}
+}

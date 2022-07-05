@@ -1,0 +1,71 @@
+
+
+:root {
+    --chart-line-color: #1e90ff;
+    --chart-column-color: #1e90ff;
+    --chart-line-data-color: black;
+    --chart-column-data-color: #fff;
+    --chart-border-bottom-color: #edf2f9;
+  
+  }
+  
+$primary-color: #4e73df;
+$secondary-color: #6c757d;
+$success-color: #1cc88a;
+$danger-color: #e74a3b;
+$warning-color: #f6c23e;
+$info-color: #36b9cc;
+$blue-darker-color: #3e8ed0;
+$border-color: #edf2f9;
+
+$body-bg-color:#f2f6fc;
+
+$sidbar-bg-color :#fff;
+$sidbar-box-shadow:  0.15rem 0 1.75rem 0 rgba(33, 40, 50, 0.15) !important;
+$sidbar-border-end-color:$border-color;
+$sidbar-header-bg-color:  transparent;
+$sidbar-header-text-color: black;
+$sidbar-header-border-end-color: $border-color;
+$sidbar-link-color: #a7aeb8;
+$sidbar-link-active-color: #4e73df;
+$sidbar-link-hover-color: #4e73df;
+
+
+$navbar-icons-color:silver;
+$navbar-text-color:#858796;
+
+$card-header-bg-color:#f8f9fc;
+$card-header-color: $primary-color;
+$card-no-header-color: primary-color;
+
+$btn-primary-bg-color: $primary-color;
+$btn-secondary-bg-color: $secondary-color;
+$btn-success-bg-color: $success-color;
+$btn-danger-bg-color: $danger-color;
+$btn-warning-bg-color: $warning-color;
+$btn-warning-color: #fff;
+$btn-info-bg-color: $info-color;
+$btn-info-color: #fff;
+$btn-link-color: $primary-color;
+
+$text-primary-color: $primary-color;
+$text-secondary-color: $secondary-color;
+$text-success-color: $success-color;
+$text-danger-color: $danger-color;
+$text-warning-color: $warning-color;
+$text-info-color: $info-color;
+
+$bg-primary: $primary-color;
+$bg-secondary: $secondary-color;
+$bg-success: $success-color;
+$bg-danger: $danger-color;
+$bg-warning: $warning-color;
+$bg-info: $info-color;
+
+
+$filter-group-button-bg: $primary-color;
+$filter-active-bg: $filter-group-button-bg;
+
+$pagination-color: $primary-color;
+$pagination-active-bg: $btn-primary-bg-color;
+$pagination-active-color: $btn-primary-color;

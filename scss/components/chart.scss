@@ -1,0 +1,32 @@
+
+.theme-chart {
+    height: 400px;
+    direction: ltr;
+    max-width: 400px;
+    &.column {
+        color: var(--chart-column-data-color);
+        --color:  var(--chart-column-color);
+    }
+    &.line {
+        color: var(--chart-line-data-color);
+        --color:  var(--chart-line-color);
+    }
+    --primary-axis-color: var(--chart-border-bottom-color);
+    .title {
+        margin-inline-end: 10px;
+        margin-bottom:9px
+    }
+.data {
+    font-size: 14px;
+}
+th {
+    color: black;
+}
+
+
+  }
+
+
+  body.dark-mode .theme-chart th {
+      color: $dark-text-color-second;
+  }

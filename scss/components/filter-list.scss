@@ -1,0 +1,133 @@
+.filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  >.filter-group-button {
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+    cursor: pointer;
+    min-width: 200px;
+    padding: 0.25rem 0.5rem;
+    background-color: $filter-group-button-bg;
+    color: $filter-group-button-color;
+    font-size: .900rem;
+    border-radius: 0.2rem;
+    justify-content: space-between;
+
+    .filter-selectd-title {
+      display: flex;
+      justify-content: center;
+      background-color: $filter-selectd-title-bg;
+      color: $filter-selectd-title-color;
+      font-size: 85%;
+      padding: 0 3px 0px 3px;
+      margin-inline-start: 10px;
+      border-radius: 0.2rem;
+
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: -2px !important;
+    min-width: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 9px;
+      background-color: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $filter-group-button-bg;
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: start;
+      padding-inline-start: 10px !important;
+      border-radius: 0.2rem;
+      margin: 3px;
+      padding: 2px 2px 2px 2px;
+      background-color: $filter-bg;
+      color: $filter-color;
+      font-size: .900rem;
+      cursor: pointer;
+
+      .checked-icon-content {
+        padding-inline-start: 5px;
+        font-size: 16px;
+
+      }
+
+      &.active {
+        background-color: $filter-active-bg;
+        color: $filter-active-color;
+
+      }
+    }
+  }
+}
+
+.filters-selected {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  li {
+    display: inline-flex;
+    background-color: $filter-cancle-bg;
+    color: $filter-cancle-color;
+    border-radius: 0.2rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-inline-start: 8px;
+    padding-inline-end: 40px;
+    cursor: pointer;
+    font-size: .900rem;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 50%;
+      right: 3px;
+      transform: translate(-5%, -50%);
+
+      [dir="rtl"] & {
+        transform: translate(-5%, -50%);
+
+        left: 3px;
+        right: auto;
+      }
+    }
+  }
+}
+
+body.dark-mode {
+  .filter-list .dropdown-menu li {
+    background-color: transparent;
+    color: $dark-text-color-second;
+
+    &.active {
+      background-color: black;
+      color: $dark-text-color;
+    }
+  }
+  .filters-selected li {
+    background-color: black;
+    color: $dark-text-color-second;
+  }
+}

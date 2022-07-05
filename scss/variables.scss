@@ -1,0 +1,144 @@
+@font-face {
+  font-family: appFont;
+  src: url("../fonts/ArbFONTS-DINNextLTArabic-Regular-2.ttf");
+}
+
+$font: appFont;
+$phones-screen-width:700px;
+$page-title-color: #6c757d;
+$section-title-color: #6c757d;
+
+// colors
+$border-color: #edf2f9;
+$body-bg-color: #f9fafb;
+
+$primary-color: #22a7f0;
+$secondary-color: #6c757d;
+$success-color: #2ecc71;
+$danger-color: #fa2a00;
+$warning-color: #ffc107;
+$info-color: #0dcaf0;
+$blue-darker-color: #3e8ed0;
+
+$dark-bg-color: #242424;
+$dark-border-color: #363636;
+$dark-text-color: #fff;
+$dark-text-color-second: #dbdbdb;
+$dark-text-color-third: #b5b5b5;
+
+$sidbar-bg-color: #1f2a37;
+$sidbar-box-shadow:  none;
+$sidbar-background-image: none;
+$sidbar-border-end-color: transparent;
+$sidbar-header-text-color: #fff;
+$sidbar-header-border-end-color: transparent;
+$sidbar-header-border-end-width: 1px;
+$sidbar-header-bg-color: #111827;
+$sidbar-width: 256px;
+$sidbar-links-title-color: #afaeb7;
+$sidbar-links-title-font-size: 14px;
+$sidbar-link-font-size: 16px;
+$sidbar-link-color: #a3a9b4;
+$sidbar-link-hover-color: #fff;
+$sidbar-link-hover-bg-color: transparent;
+$sidbar-link-active-color: #fff;
+$sidbar-link-active-bg-color: transparent;
+$sidbar-has-links-icon-color: #a3a9b4;
+$sidbar-has-links-icon-size: 23px;
+$sidbar-dark-link-color: $dark-text-color-second;
+$sidbar-dark-link-active-and-hover-color: $blue-darker-color;
+
+$navbar-bg-color: #fff;
+$navbar-border-bottom-color: $border-color;
+$navbar-text-color: black;
+$navbar-text-size: 16px;
+$navbar-icons-color: black;
+$navbar-icons-size: 19px;
+$navbar-dropdown-icons-color: black;
+$navbar-dropdown-link-size: 15px;
+$navbar-dropdown-link-color: black;
+$navbar-dropdown-text-color: black;
+$navbar-dark-color: $dark-text-color-second;
+$navbar-dark-text-and-icons-color: $blue-darker-color;
+
+$dropdown-icons-color: black;
+$dropdown-link-size: 15px;
+$dropdown-link-color: black;
+
+$breadcrumb-item-color: #0d6efd;
+$breadcrumb-item-active-color: #6c757d;
+
+$card-header-bg-color: #fff;
+$card-header-color: black;
+$card-no-header-color: black;
+
+$columns-action-color: black;
+$column-title-color: black;
+$column-title-size: 14px;
+$column-value-color: black;
+$column-value-size: 14px;
+
+$filter-group-button-bg: #0dcaf0;
+$filter-group-button-color: #fff;
+$filter-selectd-title-bg: #fff;
+$filter-selectd-title-color: black;
+$filter-bg: #edf2f9;
+$filter-color: black;
+$filter-active-bg: $filter-group-button-bg;
+$filter-active-color: $filter-group-button-color;
+$filter-cancle-bg: #fff;
+$filter-cancle-color: black;
+
+$text-primary-color: $primary-color;
+$text-secondary-color: $secondary-color;
+$text-success-color: $success-color;
+$text-danger-color: $danger-color;
+$text-warning-color: $warning-color;
+$text-info-color: $info-color;
+$text-white-color: #fff;
+$text-light-color: #fff;
+$text-dark-color: black;
+
+$bg-primary: $primary-color;
+$bg-secondary: $secondary-color;
+$bg-success: $success-color;
+$bg-danger: $danger-color;
+$bg-warning: $warning-color;
+$bg-info: $info-color;
+$bg-white: #fff;
+$bg-light: #fff;
+$bg-dark: black;
+
+$btn-primary-bg-color: $primary-color;
+$btn-primary-color: #fff;
+$btn-secondary-bg-color: $secondary-color;
+$btn-secondary-color: #fff;
+$btn-success-bg-color: $success-color;
+$btn-success-color: #fff;
+$btn-danger-bg-color: $danger-color;
+$btn-danger-color: #fff;
+$btn-warning-bg-color: $warning-color;
+$btn-warning-color: black;
+$btn-info-bg-color: $info-color;
+$btn-info-color: black;
+$btn-light-bg-color: #f8f9fa;
+$btn-light-color: black;
+$btn-dark-bg-color: #212529;
+$btn-dark-color: #fff;
+$btn-link-color: $primary-color;
+
+$pagination-color: $primary-color;
+$pagination-active-bg: $btn-primary-bg-color;
+$pagination-active-color: $btn-primary-color;
+
+$information-title-color: #6c757d;
+$information-icon-color: #dddfeb;
+
+:root {
+  --chart-line-color: #1e90ff;
+  --chart-column-color: #1e90ff;
+  --chart-line-data-color: black;
+  --chart-column-data-color: #fff;
+  --chart-border-bottom-color: #edf2f9;
+
+}

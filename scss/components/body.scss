@@ -1,0 +1,24 @@
+body {
+  font-family: $font;
+  background-color: $body-bg-color;
+  padding-bottom: 50px;
+}
+
+.page-title {
+  color: $page-title-color;
+  margin: 0.5em;
+}
+.section-title {
+  color: $section-title-color;
+  margin: 0.5em;
+}
+
+body.dark-mode {
+  background-color: $dark-bg-color;
+  color: $dark-text-color-second;
+
+  .page-title,
+  .section-title {
+    color: $dark-text-color;
+  }
+}

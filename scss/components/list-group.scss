@@ -1,0 +1,16 @@
+.list-group {
+  
+  padding: 2px 0px 2px 0px;
+  .list-group-item {
+    border-color: $border-color;
+    
+  }
+}
+
+
+  body.dark-mode .list-group .list-group-item {
+    background-color:$dark-bg-color ;
+    color:$dark-text-color-second  ;
+    border-color: $dark-border-color;
+
+  }

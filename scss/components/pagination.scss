@@ -1,0 +1,53 @@
+
+.pagination {
+    .page-link {
+        border-color: $border-color  !important;
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .page-item:not(.disabled) {
+        .page-link {
+            color: $pagination-color;
+        }
+
+        &.active {
+            .page-link {
+                background-color: $pagination-active-bg;
+                color: $pagination-active-color;
+
+            }
+        }
+    }
+}
+
+
+body.dark-mode .pagination {
+    .page-link {
+        border-color:$dark-border-color !important;
+        background-color: transparent !important;
+        color: #0d6efd !important;
+
+    }
+    .page-item:not(.disabled) { 
+        color: $dark-text-color !important;
+        &.active {
+            .page-link {
+                color: $dark-text-color !important;
+    
+            }
+        }
+    }
+
+    .page-item.disabled { 
+        .page-link {
+            color: $dark-text-color-third !important;
+
+
+        }
+    }
+    
+    
+}

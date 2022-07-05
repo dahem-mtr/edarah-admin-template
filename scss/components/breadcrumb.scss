@@ -1,0 +1,31 @@
+
+.breadcrumb {
+  margin-inline-start: 10px;
+  margin-top: 5px;
+  .breadcrumb-item {
+    color: $breadcrumb-item-active-color !important;
+
+  a {
+    color : $breadcrumb-item-color ;
+    padding-right: 6px;
+    padding-left: 0px;
+
+  }
+
+    display: inline-flex;
+    
+    &:before {
+      padding-right: 5px;
+      padding-left: 0px;
+
+      [dir="rtl"] & {
+      padding-right:0px;
+      padding-left: 5px;
+      }
+    }
+  
+  }
+  .breadcrumb-item a {
+    text-decoration: none;
+  }
+}

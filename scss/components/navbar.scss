@@ -1,0 +1,130 @@
+.navbar {
+  z-index: 999;
+  background-color: $navbar-bg-color;
+  border-bottom-color: $navbar-border-bottom-color;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .bi-list {
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $navbar-text-color;
+  }
+
+  i,
+  span {
+    color: $navbar-icons-color;
+    font-size: $navbar-icons-size;
+  }
+
+  button {
+    &:hover {
+      color: $navbar-text-color;
+    }
+
+    padding: 0px 6px 0px 6px;
+    display: inline;
+    font-size: $navbar-text-size;
+    color: $navbar-text-color;
+  }
+
+  .dropdown {
+    .content-lg {
+      min-width: 300px;
+      display: block;
+      margin: 0px !important;
+      .content-lg-header {
+        color: $navbar-dropdown-text-color;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+    .dropdown-menu {
+      li a {
+       
+        color: $navbar-dropdown-link-color;
+    
+        i,
+        span {
+          color: $navbar-dropdown-icons-color;
+        }
+        &:hover {
+          background-color: #f1f1f1;
+          color: $navbar-dropdown-link-color;
+        }
+      }
+
+      left: 0;
+      right: auto;
+      overflow: hidden;
+
+      [dir="rtl"] & {
+        right: 0;
+        left: auto;
+      }
+
+      @media screen and (max-width: $phones-screen-width) {
+        right: 10px !important;
+        left: 10px !important;
+        top: 60px !important;
+        position: fixed !important;
+      }
+    }
+  }
+
+  .bi-lightbulb {
+    display: none;
+  }
+}
+
+
+
+
+
+
+// dark mode 
+body.dark-mode .navbar {
+  background-color:$dark-bg-color;
+  border-bottom-color: $dark-border-color;
+
+  button ,button i{
+    color:$navbar-dark-color ;
+    
+  }
+  
+  button:hover ,button:hover i{
+  color:$navbar-dark-text-and-icons-color  !important;
+  }
+  
+  .dropdown .dropdown-menu {
+  background-color:$dark-bg-color ;
+  color:$navbar-dark-color ;
+  }
+
+  .dropdown .dropdown-menu li  {
+    a ,i {
+      background-color: transparent ;
+      color:$navbar-dark-color ;
+    }
+    &:hover a ,&:hover i {
+      color: $navbar-dark-text-and-icons-color;
+    }
+  }
+   .content-lg .content-lg-header{
+    color: $navbar-dark-color ;
+  }
+ .bi-lightbulb-off {
+   display: none;
+ }
+ .bi-lightbulb {
+  display: block;
+}
+}
+

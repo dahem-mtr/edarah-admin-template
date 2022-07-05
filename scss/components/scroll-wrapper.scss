@@ -1,0 +1,32 @@
+
+ .scroll-wrapper {
+        position: relative;
+        overflow: hidden;
+        &:after {
+            content: "";
+            color: transparent;
+            bottom: 0;
+            top: 0;
+            right: -200px;
+            -webkit-box-shadow: -20px 2px 25px -2px #ddd; 
+            box-shadow: -20px  2px 25px -2px #ddd;
+            position: absolute;
+            opacity: 0.5;
+            width: 200px;
+            height:  100px;
+            z-index: 5;
+            
+        }
+        &.horizontal {
+            // background-image: linear-gradient(240deg, #f8f8f88a, hsla(3, 100%, 97%, 0));
+            [dir="rtl"] & {
+                 background-image: linear-gradient(90deg, #f8f8f88a, hsla(3, 100%, 97%, 0));
+              }
+            
+        }
+        &.vertical {
+            background-image: linear-gradient(0deg, #f8f8f88a, hsla(3, 100%, 97%, 0));
+            
+        }
+    
+    }

@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap
+      contributors" />
+  <meta name="generator" content="Hugo 0.84.0" />
+  <title>إدارة</title>
+  <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link href="plugins/charts.min.css" rel="stylesheet" />
+  <link href="css/admin.css" rel="stylesheet" />
+  <link href="plugins/bootstrap-icons.css" rel="stylesheet" />
+  <link href="plugins/placeholder-loading.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- sidebar -->
+  <div class="sidebar collapsed">
+    <div class="header">
+      <div class="title"> إدارة </div>
+    </div>
+
+    <ul class="links">
+      <div class="links-title"> الرئيسية</div>
+
+      <li class="link active">
+        <a href="#">
+          <i class="bi bi-people-fill sidebar-icon"> </i> المستخدمين
+        </a>
+      </li>
+
+
+      <li class="link">
+        <a href="#"> <i class="bi bi-gear-fill"></i> الأعدادات
+          <div class="item-end">
+            <span class="badge bg-danger">
+              2
+          </div>
+        </a>
+      </li>
+      <div class="links-title"> صفحات</div>
+      <li class="link has-links">
+        <a class="nav-link">
+          <i class="bi bi-list-ul"></i> قائمة
+        </a>
+        <ul class="links links-tree">
+          <li class="link">
+            <a href="#">
+              <i class="bi bi-circle"></i> اولى
+            </a>
+          </li>
+          <li class="link">
+            <a href="#">
+              <i class="bi bi-circle"></i> ثانية
+            </a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+  <!--/ sidebar -->
+  <!--app-wrapper -->
+  <div class="app-wrapper">
+    <!--navbarr -->
+    <nav class="navbar align-items-center sticky-top">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <button class="btn sidebar-toggle" type="button">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div class="dropdown">
+            <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-fill"> </i>داحم
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><i class="bi
+                        bi-card-text"></i> الملف الشخصي</a></li>
+              <li><a class="dropdown-item" onclick="event.stopPropagation();" href="#"><i class="bi
+                        bi-people-fill"></i>
+                  Link 1</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi
+                        bi-box-arrow-right"></i> تسجيل الخروج </a></li>
+            </ul>
+          </div>
+
+
+          <div class="dropdown">
+            <button class="btn" type="button" id="wer" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-bell"></i>
+
+            </button>
+            <div class="dropdown-menu" aria-labelledby="wer">
+              <div class="content-lg">
+                <div class="content-lg-header"> الاشعارات </div>
+                <div class="dropdown-divider"></div>
+                <ui class="notifications">
+                  <li> <a href="#">
+                      <div class="icon">
+                        <i class="bi bi-envelope-fill"></i>
+                      </div>
+                      <div class="body">٦ الرسائل</div>
+                      <div class="date text-muted">
+                        منذ ٤ اشهر
+                      </div>
+                    </a></li>
+                  <li> <a href="#">
+                      <div class="icon">
+                        <i class="bi bi-clipboard"></i>
+                      </div>
+                      <div class="body">٤ تقارير</div>
+                      <div class="date text-muted">
+                        منذ ٤ اشهر
+                      </div>
+                    </a></li>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn"></i> المزيد</button>
+                  </div>
+                </ui>
+
+              </div>
+
+            </div>
+
+            <button type="button" class="btn dir-toggle">LTR</button>
+            <a href="/second-theme.html" class="btn">الثيم الثاني</a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <button class="btn dark-mode-toggle" type="button">
+            <i class="bi bi-lightbulb"></i>
+            <i class="bi bi-lightbulb-off"></i>
+          </button>
+
+
+        </div>
+      </div>
+    </nav>
+    <!--  /navbarr -->
+
+    <div class="container-fluid">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#"> إدارة</a></li>
+          <li class="breadcrumb-item active" aria-current="page">المكونات</li>
+        </ol>
+      </nav>
+      <h4 class="page-title">لوحة الادارة</h4>
+      <!-- details -->
+      <section>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card p-2 mt-1">
+              <div class="information">
+                <div class="information-content">
+                  <div class="information-title">مستخدمين جدد</div>
+                  <div class="information-count">1600</div>
+                </div>
+
+                <div class="information-icon"> <i class="bi bi-person-fill">
+                  </i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card p-2 mt-1">
+              <div class="information">
+                <div class="information-content">
+                  <div class="information-title"> طلبات جديدة </div>
+                  <div class="information-count">20</div>
+                </div>
+
+                <div class="information-icon"> <i class="bi bi-bag-fill"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card p-2 mt-1">
+              <div class="information">
+                <div class="information-content">
+                  <div class="information-title t">ارباح هذا الشهر</div>
+                  <div class="information-count">$30,000 </div>
+                </div>
+
+                <div class="information-icon"> <i class="bi bi-calendar-fill"></i></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!--/  details -->
+
+      <!-- charts -->
+
+      <section>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card p-2 mt-1">
+              <table class="charts-css theme-chart show-heading column show-labels
+                  show-data show-primary-axis data-spacing-2
+                  datasets-spacing-4">
+                <caption class="title"> المبيعات </caption>
+                <thead>
+                  <tr>
+                    <th scope="col"> Year </th>
+                    <th scope="col"> Progress </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"> Jan </th>
+                    <td style="--size:0.2;"><span class="data"> $10,000
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Mar </th>
+                    <td style="--size:0.4;"><span class="data"> $20,000
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> May </th>
+                    <td style="--size:0.6;">$30,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Jul </th>
+                    <td style="--size:0.8;">$40,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Sep </th>
+                    <td style="--size:1;">$100.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-2 mt-1">
+              <table class="charts-css theme-chart line show-heading
+                  show-data-on-hover show-labels show-primary-axis">
+                <caption class="title"> الطلبات </caption>
+
+                <tbody>
+                  <tr>
+                    <th scope="row"> Jan </th>
+
+                    <td style="--start: 0.0; --size: 0.4"> <span class="data">
+                        40K </span> </td>
+                  </tr>
+                  <tr>
+                    <td style="--start: 0.4; --size: 0.2"> <span class="data">
+                        20K </span> </td>
+                  </tr>
+                  <tr>
+                    <td style="--start: 0.2; --size: 0.6"> <span class="data">
+                        60K </span> </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Mar </th>
+
+                    <td style="--start: 0.6; --size: 0.4"> <span class="data">
+                        40K </span> </td>
+                  </tr>
+                  <tr>
+
+                    <td style="--start: 0.4; --size: 0.8"> <span class="data">
+                        80K </span> </td>
+                  </tr>
+                  <tr>
+
+                    <td style="--start: 0.8; --size: 0.6"> <span class="data">
+                        60K </span> </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> Sep </th>
+
+                    <td style="--start: 0.6; --size: 1.0"> <span class="data">
+                        100K </span> </td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ charts -->
+
+      <!-- table tols -->
+      <section>
+        <h5 class="section-title">المستخدمين</h5>
+        <div class="row">
+          <div class="d-flex align-self-center justify-content-between">
+            <div>
+              <input class="form-control form-control-sm" style="width:250px;" type="text" placeholder="بحث ..."
+                aria-label="default input
+                  example">
+            </div>
+            <div>
+              <button type="button" class="btn btn-success btn-sm"><i class="bi bi-plus-lg"></i> اضافة </button>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-2 d-flex align-self-center">
+            <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+          </div>
+          <div class="col d-flex flex-row-reverse">
+            <div class="dropdown d-flex py-1">
+
+              <div>
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-sort-down"></i></button>
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i
+                    class="bi bi-funnel"></i> تصفية </button>
+
+                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  ادوات
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">استيراد مستخدمين من
+                      excel</a></li>
+                  <li><a class="dropdown-item" href="#">ارسال تقرير </a></li>
+                </ul>
+                <button disabled type="button" class="btn btn-primary btn-sm"><i class="bi bi-check2-square"></i>
+                  تحرير سريع</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse" id="collapseExample">
+          <ul class="filter-list">
+            <li class="filter-group-button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="filter-title"><i class="bi bi-files"></i> الدور
+              </div>
+              <div class="filter-selectd-title">2</div>
+
+            </li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li class="">
+
+              <li class="active" onclick="event.stopPropagation();">
+                <div class="filter-title"> مشرف </div>
+                <div class="checked-icon-content">
+                  <i class="bi bi-check2"></i>
+                </div>
+              </li>
+              <li class="" onclick="event.stopPropagation();">
+                <div class="filter-title"> مسؤول قاعدة بيانات </div>
+              </li>
+              <li class="active" onclick="event.stopPropagation();">
+                <div class="filter-title"> مستخدم عادي </div>
+                <div class="checked-icon-content">
+                  <i class="bi bi-check2"></i>
+                </div>
+              </li>
+            </ul>
+            <li class="filter-group-button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="filter-group-button"><i class="bi bi-files"></i>
+                الميزانية </div>
+              <div class="filter-selectd-title">10 - 2000</div>
+            </li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <li class="">
+                <div class="filter-title d-flex justify-content-between"> من <input
+                    class="form-control form-control-sm w-100 mx-1" style="width:250px;" type="text" placeholder=""
+                    aria-label="default input
+                      example"> </div>
+              </li>
+              <li class="">
+                <div class="filter-title d-flex justify-content-between"> الى <input
+                    class="form-control form-control-sm w-100 mx-1" style="width:250px;" type="text" placeholder=""
+                    aria-label="default input
+                      example"> </div>
+              </li>
+              <li class="active d-flex justify-content-center">
+                <div class="filter-title "> عرض النتائج </div>
+              </li>
+            </ul>
+            <li class="filter-group-button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="filter-title"><i class="bi bi-files"></i> فرز
+                بواسطة
+              </div>
+              <div class="filter-selectd-title">الاسم</div>
+            </li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+              <li class="active">
+                <div class="filter-title"> الاسم </div>
+                <div class="checked-icon-content">
+                  <i class="bi bi-check2"></i>
+                </div>
+              </li>
+              <li class="">
+                <div class="filter-title"> تاريخ الاضافة </div>
+              </li>
+            </ul>
+            <li class="filter-group-button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="filter-title"><i class="bi bi-files"></i> عدد
+                النتائج
+              </div>
+              <div class="filter-selectd-title">20</div>
+            </li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+              <li class="active">
+                <div class="filter-title"> 20 </div>
+                <div class="checked-icon-content">
+                  <i class="bi bi-check2"></i>
+                </div>
+              </li>
+              <li class="">
+                <div class="filter-title">30</div>
+              </li>
+              <li class="">
+                <div class="filter-title">40</div>
+              </li>
+              <li class="">
+                <div class="filter-title">50</div>
+              </li>
+              <li class="">
+                <div class="filter-title">100</div>
+              </li>
+
+            </ul>
+          </ul>
+        </div>
+        <ul class="filters-selected">
+          <li> <i class="bi bi-x-lg"></i> مشرف</li>
+          <li> <i class="bi bi-x-lg"></i> مستخدم عادي </li>
+        </ul>
+
+        <!--   / table tols -->
+      </section>
+
+
+      <!--  list -->
+      <section>
+        <ul class="list-group list-row">
+          <!-- <div class="loading-overlay">
+              <div class="spinner-border text-dark" role="status">
+              </div>
+            </div> -->
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between px-1">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+              <div class="dropdown">
+                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                            bi-pencil-square"></i> تعديل </a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                            bi-trash3-fill"></i> حذف</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="columns-container action-able overflow-x-scroll">
+              <div class="row-columns">
+                <div class="column">
+
+                  <div class="column-title">
+                    سامي
+
+                  </div>
+                  <div class="column-value img px-1 pt-1">
+                    <img src="imgs/avatar-male.png" width="60" height="60">
+                  </div>
+                </div>
+                <div class="columns-nested">
+
+                  <div class="column">
+                    <div class="column-title">
+                      الدور :
+                    </div>
+                    <div class="column-value">
+                      مستخدم عادي
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="column-title">
+                      البريد :
+                    </div>
+                    <div class="column-value">
+                      sami@gmail.com
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="flex-fill">
+
+
+                </div>
+                <div class="column justify-content-center">
+                  <div class="column-title">
+                    تاريخ التسجيل
+                  </div>
+                  <div class="column-value">
+                    السبت 18-6-22
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-folder-minus"></i> نقل </button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-file-minus-fill"></i>
+                  تعديل الصلاحيات</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between px-1">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+              <div class="dropdown">
+                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                            bi-pencil-square"></i> تعديل </a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                            bi-trash3-fill"></i> حذف</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="columns-container action-able overflow-x-scroll">
+              <div class="row-columns">
+                <div class="column">
+
+                  <div class="column-title">
+                    عبدالرحمن محمد
+
+                  </div>
+                  <div class="column-value img px-1 pt-1">
+                    <img src="imgs/avatar-male.png" width="60" height="60">
+                  </div>
+                </div>
+                <div class="columns-nested">
+
+                  <div class="column">
+                    <div class="column-title">
+                      الدور :
+                    </div>
+                    <div class="column-value">
+                      مشرف
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="column-title">
+                      البريد :
+                    </div>
+                    <div class="column-value">
+                      dahem.mtr@gmail.com
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="flex-fill">
+
+
+                </div>
+                <div class="column justify-content-center">
+                  <div class="column-title">
+                    تاريخ التسجيل
+                  </div>
+                  <div class="column-value">
+                    السبت 18-6-22
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-folder-minus"></i> نقل </button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-file-minus-fill"></i>
+                  تعديل الصلاحيات</button>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between px-1">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+              <div class="dropdown">
+                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                            bi-pencil-square"></i> تعديل </a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                            bi-trash3-fill"></i> حذف</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="columns-container action-able overflow-x-scroll">
+              <div class="row-columns">
+                <div class="column">
+
+                  <div class="column-title">
+                    نواف بن تركي
+
+                  </div>
+                  <div class="column-value img px-1 pt-1">
+                    <img src="imgs/avatar-male.png" width="60" height="60">
+                  </div>
+                </div>
+                <div class="columns-nested">
+
+                  <div class="column">
+                    <div class="column-title">
+                      الدور :
+                    </div>
+                    <div class="column-value">
+                      مشرف
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="column-title">
+                      البريد :
+                    </div>
+                    <div class="column-value">
+                      naeaf@gmail.com
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="flex-fill">
+
+
+                </div>
+                <div class="column justify-content-center">
+                  <div class="column-title">
+                    تاريخ التسجيل
+                  </div>
+                  <div class="column-value">
+                    السبت 18-6-22
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-folder-minus"></i> نقل </button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-file-minus-fill"></i>
+                  تعديل الصلاحيات</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- /  list -->
+      <nav aria-label="...">
+        <ul class="pagination pagination-sm">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">السابق</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">التالي</a>
+          </li>
+        </ul>
+      </nav>
+      <!--  list loading -->
+      <section>
+
+        <h5 class="section-title"> انتظار عند تحديث القائمة </h5>
+
+        <ul class="list-group list-row">
+          <div class="loading-overlay">
+            <div class="spinner-border text-dark" role="status">
+            </div>
+          </div>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between px-1">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+              <div class="dropdown">
+                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                      bi-pencil-square"></i> تعديل </a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                      bi-trash3-fill"></i> حذف</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="columns-container action-able overflow-x-scroll">
+              <div class="row-columns">
+                <div class="column">
+
+                  <div class="column-title">
+                    سامي
+
+                  </div>
+                  <div class="column-value img px-1 pt-1">
+                    <img src="imgs/avatar-male.png" width="60" height="60">
+                  </div>
+                </div>
+                <div class="columns-nested">
+
+                  <div class="column">
+                    <div class="column-title">
+                      الدور :
+                    </div>
+                    <div class="column-value">
+                      مستخدم عادي
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="column-title">
+                      البريد :
+                    </div>
+                    <div class="column-value">
+                      sami@gmail.com
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="flex-fill">
+
+
+                </div>
+                <div class="column justify-content-center">
+                  <div class="column-title">
+                    تاريخ التسجيل
+                  </div>
+                  <div class="column-value">
+                    السبت 18-6-22
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-folder-minus"></i> نقل </button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-file-minus-fill"></i>
+                  تعديل الصلاحيات</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between px-1">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+              <div class="dropdown">
+                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                      bi-pencil-square"></i> تعديل </a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                      bi-trash3-fill"></i> حذف</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="columns-container action-able overflow-x-scroll">
+              <div class="row-columns">
+                <div class="column">
+
+                  <div class="column-title">
+                    عبدالرحمن محمد
+
+                  </div>
+                  <div class="column-value img px-1 pt-1">
+                    <img src="imgs/avatar-male.png" width="60" height="60">
+                  </div>
+                </div>
+                <div class="columns-nested">
+
+                  <div class="column">
+                    <div class="column-title">
+                      الدور :
+                    </div>
+                    <div class="column-value">
+                      مشرف
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="column-title">
+                      البريد :
+                    </div>
+                    <div class="column-value">
+                      dahem.mtr@gmail.com
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="flex-fill">
+
+
+                </div>
+                <div class="column justify-content-center">
+                  <div class="column-title">
+                    تاريخ التسجيل
+                  </div>
+                  <div class="column-value">
+                    السبت 18-6-22
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-folder-minus"></i> نقل </button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-file-minus-fill"></i>
+                  تعديل الصلاحيات</button>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between px-1">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+              <div class="dropdown">
+                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                      bi-pencil-square"></i> تعديل </a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi
+                      bi-trash3-fill"></i> حذف</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="columns-container action-able overflow-x-scroll">
+              <div class="row-columns">
+                <div class="column">
+
+                  <div class="column-title">
+                    نواف بن تركي
+
+                  </div>
+                  <div class="column-value img px-1 pt-1">
+                    <img src="imgs/avatar-male.png" width="60" height="60">
+                  </div>
+                </div>
+                <div class="columns-nested">
+
+                  <div class="column">
+                    <div class="column-title">
+                      الدور :
+                    </div>
+                    <div class="column-value">
+                      مشرف
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="column-title">
+                      البريد :
+                    </div>
+                    <div class="column-value">
+                      naeaf@gmail.com
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="flex-fill">
+
+
+                </div>
+                <div class="column justify-content-center">
+                  <div class="column-title">
+                    تاريخ التسجيل
+                  </div>
+                  <div class="column-value">
+                    السبت 18-6-22
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-folder-minus"></i> نقل </button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-file-minus-fill"></i>
+                  تعديل الصلاحيات</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- /  list loading -->
+
+      <!-- placeholder-loading-->
+      <section>
+        <h5 class="section-title"> تحميل المحتوى </h5>
+        <div class="ph-item">
+          <div class="ph-col-12">
+            <div class="ph-picture"></div>
+            <div class="ph-row ">
+              <div class="ph-col-6 big"></div>
+              <div class="ph-col-4 empty big"></div>
+              <div class="ph-col-4"></div>
+              <div class="ph-col-8 empty"></div>
+              <div class="ph-col-6"></div>
+              <div class="ph-col-6 empty"></div>
+              <div class="ph-col-12"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- placeholder-loading-->
+
+
+
+
+      <div class="toast-position">
+        <div class="toast toast-auto-show align-items-center text-white
+                bg-success border-0">
+
+          <div class="toast-body">
+            أهلا
+          </div>
+        </div>
+
+      </div>
+
+
+      <section>
+
+        <div class="card mt-2">
+          <div class="card-header d-flex justify-content-between
+                  align-items-center">
+            <div>
+              عبدالرحمن
+            </div>
+
+            <div class="dropdown">
+              <button class="btn columns-action-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#"><i class="bi
+                            bi-pencil-square"></i> تعديل </a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi
+                            bi-trash3-fill"></i> حذف</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="card-body pb-2 px-2">
+            <div class="columns-container ">
+              <div class="row-columns">
+                <div class="column">
+
+
+                  <div class="column-value img px-1 pt-1">
+                    <img src="imgs/avatar-male.png" width="60" height="60">
+                  </div>
+                </div>
+                <div class="columns-nested">
+
+                  <div class="column">
+                    <div class="column-title">
+                      الدور :
+                    </div>
+                    <div class="column-value">
+                      مشرف
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="column-title">
+                      البريد :
+                    </div>
+                    <div class="column-value">
+                      dahem.mtr@gmail.com
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="flex-fill">
+
+
+                </div>
+                <div class="column justify-content-center">
+                  <div class="column-title">
+                    تاريخ التسجيل
+                  </div>
+                  <div class="column-value">
+                    السبت 18-6-22
+                  </div>
+                </div>
+
+              </div>
+              <div class="row-columns">
+
+
+                <div class="column">
+                  <div class="column-title">
+                    الصلاحيات :
+                  </div>
+                  <div class="column-value">
+                    ادارة المستخدمين -
+                    ادارة المستودعات -
+                    ادارة الطلبات
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-folder-minus"></i> نقل </button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-file-minus-fill"></i>
+                  تعديل الصلاحيات</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+      </section>
+
+      <!-- buttons -->
+      <section>
+        <h5 class="section-title"> أزرار </h5>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- buttons -->
+      <!-- form-->
+      <section>
+        <div class="card mt-3 ">
+          <div class="card-header">
+            فورم
+          </div>
+
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label"> اسم المستخدم</label>
+                <input type=" text" class="form-control" id="exampleInputEmail1" s aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">لا نشارك بريدك الالكتروني مع أحد ابدا</div>
+              </div>
+              <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">البريد الالكتروني</label>
+                <input type="email" class="form-control" id="exampleInputPassword1">
+              </div>
+            </div>
+
+            <div class="row py-2">
+              <div class="col-md-4">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected> اختر </option>
+                  <option value="1">واحد</option>
+                  <option value="2">ثاني</option>
+                  <option value="3">ثالث</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    بائع
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    مشتري
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    اختيار1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    اختيار 2
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <!-- /form-->
+
+      <!-- colors-text -->
+      <h5 class="section-title"> الوان </h5>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <p class="text-primary">.text-primary</p>
+          <p class="text-secondary">.text-secondary</p>
+          <p class="text-success">.text-success</p>
+          <p class="text-danger">.text-danger</p>
+          <p class="text-warning bg-dark">.text-warning</p>
+          <p class="text-info bg-dark">.text-info</p>
+          <p class="text-light bg-dark">.text-light</p>
+          <p class="text-dark">.text-dark</p>
+          <p class="text-muted">.text-muted</p>
+          <p class="text-white bg-dark">.text-white</p>
+          <p class="text-black-50">.text-black-50</p>
+          <p class="text-white-50 bg-dark">.text-white-50</p>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+          <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+          <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+          <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+          <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+          <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+          <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+          <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+          <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+          <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+          <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+        </div>
+      </div>
+      <!-- / colors-text -->
+
+    </div>
+  </div>
+  <!-- / app-wrapper -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

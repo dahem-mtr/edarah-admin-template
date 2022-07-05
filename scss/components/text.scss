@@ -1,0 +1,111 @@
+.text-primary {
+  color: $text-primary-color !important;
+}
+.text-secondary {
+  color: $text-secondary-color !important;
+}
+.text-success {
+  color: $text-success-color !important;
+}
+.text-danger {
+  color: $text-danger-color !important;
+}
+.text-warning {
+  color: $text-warning-color !important;
+}
+.text-info {
+  color: $text-info-color !important;
+}
+.text-light {
+  color: $text-light-color !important;
+}
+.text-white {
+  color: $text-white-color !important;
+}
+.text-dark {
+  color: $text-dark-color !important;
+}
+
+.bg-primary {
+  background-color: $bg-primary !important;
+}
+.bg-secondary {
+    background-color: $bg-secondary !important;
+}
+.bg-success {
+    background-color: $bg-success !important;
+}
+.bg-danger {
+    background-color: $bg-danger !important;
+}
+.bg-warning {
+    background-color: $bg-warning !important;
+}
+.bg-info {
+    background-color: $bg-info !important;
+}
+.bg-light {
+    background-color: $bg-light !important;
+}
+.bg-white {
+    background-color: $bg-white !important;
+}
+.bg-dark {
+    background-color: $bg-dark !important;
+}
+body.dark-mode {
+  .text-primary {
+    color: #0d6efd !important;
+  }
+  .text-secondary {
+    color: #6c757d !important;
+  }
+  .text-success {
+    color: #198754 !important;
+  }
+  .text-danger {
+    color: #dc3545 !important;
+  }
+  .text-warning {
+    color: #ffc107 !important;
+  }
+  .text-info {
+    color: #0dcaf0 !important;
+  }
+  .text-light {
+    color: #fff !important;
+  }
+  .text-white {
+    color: #fff !important;
+  }
+  .text-dark {
+    color: black !important;
+  }
+  .bg-primary {
+    background-color: #0d6efd  !important;
+  }
+  .bg-secondary {
+      background-color: #6c757d !important;
+  }
+  .bg-success {
+      background-color: #198754 !important;
+  }
+  .bg-danger {
+      background-color: #dc3545 !important;
+  }
+  .bg-warning {
+      background-color: #ffc107 !important;
+  }
+  .bg-info {
+      background-color: #0dcaf0 !important;
+  }
+  .bg-light {
+      background-color: #fff !important;
+  }
+  .bg-white {
+      background-color: #fff !important;
+  }
+  .bg-dark {
+      background-color: black !important;
+  }
+}
