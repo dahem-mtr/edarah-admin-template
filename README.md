@@ -1,9 +1,10 @@
 ## edarah | admin-template
 
-Simple and responsive using html , css ,ssas and js  
-With support for right-to-left direction and night mode
+Simple and responsive using html , css ,ssas and js 
 
-## Demo
+build with  Bootstrap 5 With support for right-to-left direction and night mode
+
+## Preview
 
 https://edarah.netlify.app
 
@@ -25,6 +26,7 @@ in `scss/admin-secondary-theme.scss`
 then build `sass scss/admin.scss css/app.css`
 
 ##  plugins
+https://icons.getbootstrap.com
 
 https://github.com/ChartsCSS/charts.css
 
