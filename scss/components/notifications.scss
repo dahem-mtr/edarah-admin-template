@@ -1,4 +1,11 @@
-.notifications li {
+.notifications 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+li {
+  
   a {
     padding: 5px;
     width: 100% !important;
@@ -17,4 +24,5 @@
     width: 100px !important;
     font-size: 14px;
   }
+}
 }

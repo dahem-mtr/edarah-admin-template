@@ -10,6 +10,8 @@
 }
 .app-wrapper {
   transition: 0.3s;
+  height: 100%;
+
 }
 .sidebar {
   width: $sidbar-width;
@@ -37,6 +39,10 @@
     justify-content: center;
     padding: 20px;
     color: $sidbar-header-text-color;
+    a {
+    color: $sidbar-header-text-color;
+    text-decoration: none;
+    }
   }
 
   .links-title {
@@ -206,7 +212,7 @@
 }
 
 body.dark-mode .sidebar {
-  background-color: $dark-bg-color;
+  background-color: $dark-bg-color-second;
   // color: $dark-text-color-second;
 
   .header {

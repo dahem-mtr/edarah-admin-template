@@ -1,0 +1,27 @@
+
+
+$sidbar-bg-color :#fff;
+$sidbar-border-end-color:$border-color;
+$sidbar-header-bg-color:  transparent;
+$sidbar-header-text-color: black;
+$sidbar-header-border-end-color: $border-color;
+$sidbar-link-color: #a7aeb8;
+$sidbar-link-active-color: #4e73df;
+$sidbar-link-hover-color: #4e73df;
+
+
+$navbar-icons-color:silver;
+$navbar-text-color:#858796;
+
+$card-header-bg-color:#f8f9fc;
+$card-header-color: $primary-color;
+$card-no-header-color: $primary-color;
+
+:root {
+  --chart-line-color: #1e90ff;
+  --chart-column-color: #1e90ff;
+  --chart-line-data-color: black;
+  --chart-column-data-color: #fff;
+  --chart-border-bottom-color: #edf2f9;
+
+}

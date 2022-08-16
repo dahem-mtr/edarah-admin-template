@@ -1,12 +1,38 @@
+@font-face {  // import your font
+    font-family: font;
+    src: url("../fonts/ArbFONTS-DINNextLTArabic-Regular-2.ttf");
+  }
 
-@import "./variables";
-// @import "./admin-secondary-theme";
 
 
+@import "./colors-variables"; // Dont't Remove  this line
+
+// here your custom colors variables, copy what you want from colors-variables.scss
+// example
+// $primary-color: #4e73df;
+// $secondary-color: #6c757d;
+// $success-color: #1cc88a;
+// $danger-color: #e74a3b;
+// $warning-color: #f6c23e;
+// $info-color: #36b9cc;
+// $blue-darker-color: #3e8ed0;
+// $border-color: #edf2f9;
+// $body-bg-color:#f2f6fc;
+
+
+@import "./variables"; // Dont't Remove  this line
+
+// here your custom components variables , copy what you want from variables.scss
+// example 
+// @import "./secondary-theme";
+
+// all components 
 @import "./components/body";
 @import "./components/navbar";
 @import "./components/sidebar";
 @import "./components/breadcrumb";
+@import "./components/page-tabs";
+@import "./components/page";
 @import "./components/card";
 @import "./components/button.scss";
 @import "./components/pagination.scss";
@@ -15,8 +41,8 @@
 @import "./components/notifications";
 @import "./components/scroll-wrapper";
 @import "./components/list-group";
-@import "./components/columnsLayout";
-@import "./components/columns-next-values";
+@import "./components/itemsLayout";
+@import "./components/items-next-values";
 @import "./components/modal";
 @import "./components/toast";
 @import "./components/filter-list.scss";

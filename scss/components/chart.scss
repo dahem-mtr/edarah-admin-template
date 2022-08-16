@@ -3,6 +3,8 @@
     height: 400px;
     direction: ltr;
     max-width: 400px;
+    --primary-axis-color: var(--chart-border-bottom-color);
+
     &.column {
         color: var(--chart-column-data-color);
         --color:  var(--chart-column-color);
@@ -11,7 +13,6 @@
         color: var(--chart-line-data-color);
         --color:  var(--chart-line-color);
     }
-    --primary-axis-color: var(--chart-border-bottom-color);
     .title {
         margin-inline-end: 10px;
         margin-bottom:9px
@@ -27,6 +28,16 @@ th {
   }
 
 
-  body.dark-mode .theme-chart th {
+  body.dark-mode .theme-chart  {
+    --primary-axis-color: var(--chart-dark-border-bottom-color);
+    th {
       color: $dark-text-color-second;
+    }
+    &.column {
+        color: $dark-text-color-second;
+    }
+    &.line {
+        color: $dark-text-color-second;
+    }
+    
   }

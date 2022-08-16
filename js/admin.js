@@ -1,4 +1,5 @@
 var screenWidth = window.innerWidth;
+
 const addEventToBrowser = function (object, type, callback) {
   if (object == null || typeof (object) == 'undefined') return;
   if (object.addEventListener) {
@@ -65,6 +66,20 @@ hasLinks.forEach(function (hasLink) {
   });
 })
 
+// hide sidebar when click link and screen size seme mobile size 
+var links = [].slice.call(document.querySelectorAll('.link'))
+links.forEach(function (link) {
+  link.addEventListener("click", function () {
+
+    if (! link.classList.contains('has-links')) {
+      if (screenWidth <= 700)
+      var sidebar = document.querySelector(".sidebar");
+      (sidebar !== null && typeof (sidebar) !== 'undefined') &&
+        sidebar.classList.toggle("sidebar-mobile-open");
+
+    }
+  });
+})
 
 // show all toast element has class toast-auto-show
 var toasts = [].slice.call(document.querySelectorAll('.toast-auto-show'))

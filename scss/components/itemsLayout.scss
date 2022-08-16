@@ -1,0 +1,120 @@
+.list-row {
+  .list-group-item {
+    // margin-bottom: 10px;
+    padding-inline: 6px;
+    border-top-width: 1px;
+  }
+
+  position: relative;
+}
+
+.items-container {
+  &.overflow-x-scroll {
+    overflow-x: scroll;
+    .row-items {
+      display: flex;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &.action-able {
+    cursor: pointer;
+  }
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+
+  .row-items {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .item {
+      margin-top: 6px;
+      margin-bottom: 6px;
+      margin-left: 6px;
+      margin-right: 6px;
+      min-width: 150px;
+
+      .item-title {
+        // font-weight: bold;
+        color: $item-title-color;
+        font-size: $item-title-size;
+        display: inline-block;
+      }
+
+      .item-value {
+        font-size: $item-value-size;
+        color: $item-value-color;
+      }
+    }
+    .push-to-end {
+      flex: 1 1 auto !important;
+    }
+    .items-nested {
+      .item:not(:first-child) {
+        margin-top: -10px;
+      }
+
+      .item-title {
+        margin-inline: 2px;
+        display: inline-block;
+      }
+      .item-value {
+        display: inline-block;
+      }
+    }
+  }
+}
+.items-container:not(.overflow-x-scroll) {
+  .row-items {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 900px) {
+      display: block;
+    }
+  }
+}
+.items-action-button {
+  margin: 0;
+  padding: 0;
+  margin-inline-end: 3px;
+  color: $items-action-color;
+}
+
+.loading-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+
+  .spinner-border {
+    margin-top: 50px;
+  }
+}
+
+body.dark-mode {
+  .items-container,
+  .items-action-button {
+    color: $dark-text-color-second;
+    .item .item-title {
+      color: $dark-text-color-second;
+    }
+
+    .item .item-value {
+      color: $dark-text-color-third;
+    }
+  }
+  .loading-overlay {
+    .spinner-border {
+      color: #fff;
+    }
+  }
+}

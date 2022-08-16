@@ -20,11 +20,13 @@
 body.dark-mode .card {
   border-color: $dark-border-color;
   background-color: $dark-bg-color;
-  .card-body,
-  .card-header {
+  .card-body
+  {
     background-color: $dark-bg-color;
   }
+  
   .card-header {
+    background-color: $dark-bg-color-second;
     border-color: $dark-border-color;
     color: $dark-text-color-second;
   }

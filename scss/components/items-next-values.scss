@@ -1,12 +1,12 @@
-.columns-next-values {
+.items-next-values {
   list-style-type: none;
   margin: 0;
   padding: 0;
   padding-top: 3px;
   width: 100% !important;
   .title {
-    color: $column-title-color;
-    font-size: $column-title-size;
+    color: $item-title-color;
+    font-size: $item-title-size;
     font-weight: bold;
   }
   li {
@@ -14,29 +14,29 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    .column-title {
+    .item-title {
       margin-inline-start: 10px;
-      color: $column-title-color;
-      font-size: $column-title-size;
+      color: $item-title-color;
+      font-size: $item-title-size;
       
     }
-    .column-value {
-      font-size: $column-value-size;
-      color: $column-value-color;
+    .item-value {
+      font-size: $item-value-size;
+      color: $item-value-color;
       margin-inline-end: 10px;
     }
   }
 }
 
-body.dark-mode .columns-next-values {
+body.dark-mode .items-next-values {
   .title {
     color: $dark-text-color;
   }
   li {
-    .column-title {
+    .item-title {
       color: $dark-text-color-second;
     }
-    .column-value {
+    .item-value {
       color: $dark-text-color-third;
     }
   }

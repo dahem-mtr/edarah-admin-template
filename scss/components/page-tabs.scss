@@ -1,0 +1,45 @@
+.page-tabs {
+  background-color: $page-tabs-bg-color;
+  flex-wrap: nowrap;
+  overflow-x: scroll !important;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-link {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-inline: 6px;
+    color: $page-tab-color;
+    background-color: $page-tab-bg-color;
+    &.active {
+      border-bottom: solid 2px;
+      border-bottom-color: $page-tab-border-bottom-color;
+      color: darken($page-tab-color, 10%);
+    }
+    &:hover {
+      color: darken($page-tab-color, 10%);
+    }
+  }
+}
+
+body.dark-mode {
+  .page-tabs {
+    background-color: transparent;
+    .nav-link {
+      // background-color: silver;
+      padding-inline: 6px;
+      color: $primary-color;
+      background-color: transparent;
+      &.active {
+        border-bottom: solid 2px;
+        border-bottom-color: $primary-color;
+        color: darken($primary-color, 10%);
+      }
+      &:hover {
+        color: darken($primary-color, 10%);
+      }
+    }
+  }
+}

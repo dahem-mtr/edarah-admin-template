@@ -1,30 +1,7 @@
-@font-face {
-  font-family: appFont;
-  src: url("../fonts/ArbFONTS-DINNextLTArabic-Regular-2.ttf");
-}
 
-$font: appFont;
+
+$font: font;
 $phones-screen-width:700px;
-$page-title-color: #6c757d;
-$section-title-color: #6c757d;
-
-// colors
-$border-color: #edf2f9;
-$body-bg-color: #f9fafb;
-
-$primary-color: #22a7f0;
-$secondary-color: #6c757d;
-$success-color: #2ecc71;
-$danger-color: #fa2a00;
-$warning-color: #ffc107;
-$info-color: #0dcaf0;
-$blue-darker-color: #3e8ed0;
-
-$dark-bg-color: #242424;
-$dark-border-color: #363636;
-$dark-text-color: #fff;
-$dark-text-color-second: #dbdbdb;
-$dark-text-color-third: #b5b5b5;
 
 $sidbar-bg-color: #1f2a37;
 $sidbar-box-shadow:  none;
@@ -61,6 +38,15 @@ $navbar-dropdown-text-color: black;
 $navbar-dark-color: $dark-text-color-second;
 $navbar-dark-text-and-icons-color: $blue-darker-color;
 
+$page-bg-color: #fff;
+$page-title-color: #6c757d;
+$section-title-color: #6c757d;
+$page-tabs-bg-color: transparent;
+$page-tab-color: black;
+$page-tab-bg-color: transparent;
+$page-tab-border-bottom-color: black;
+
+
 $dropdown-icons-color: black;
 $dropdown-link-size: 15px;
 $dropdown-link-color: black;
@@ -68,17 +54,17 @@ $dropdown-link-color: black;
 $breadcrumb-item-color: #0d6efd;
 $breadcrumb-item-active-color: #6c757d;
 
-$card-header-bg-color: #fff;
+$card-header-bg-color: #f8f9fc;
 $card-header-color: black;
 $card-no-header-color: black;
 
-$columns-action-color: black;
-$column-title-color: black;
-$column-title-size: 14px;
-$column-value-color: black;
-$column-value-size: 14px;
+$items-action-color: black;
+$item-title-color: black;
+$item-title-size: 14px;
+$item-value-color: black;
+$item-value-size: 14px;
 
-$filter-group-button-bg: #0dcaf0;
+$filter-group-button-bg: $primary-color;
 $filter-group-button-color: #fff;
 $filter-selectd-title-bg: #fff;
 $filter-selectd-title-color: black;
@@ -140,5 +126,5 @@ $information-icon-color: #dddfeb;
   --chart-line-data-color: black;
   --chart-column-data-color: #fff;
   --chart-border-bottom-color: #edf2f9;
-
+  --chart-dark-border-bottom-color : #21262d;
 }

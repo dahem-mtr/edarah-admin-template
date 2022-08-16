@@ -20,7 +20,7 @@
   <!-- sidebar -->
   <div class="sidebar collapsed">
     <div class="header">
-      <div class="title"> إدارة </div>
+      <a class="title" href="#"> إدارة </a>
     </div>
 
     <ul class="links">
@@ -98,7 +98,7 @@
               <div class="content-lg">
                 <div class="content-lg-header"> الاشعارات </div>
                 <div class="dropdown-divider"></div>
-                <ui class="notifications">
+                <ul class="notifications">
                   <li> <a href="#">
                       <div class="icon">
                         <i class="bi bi-envelope-fill"></i>
@@ -120,14 +120,14 @@
                   <div class="d-flex justify-content-center">
                     <button type="button" class="btn"></i> المزيد</button>
                   </div>
-                </ui>
+                </ul>
 
               </div>
 
             </div>
 
             <button type="button" class="btn dir-toggle">LTR</button>
-            <a href="/second-theme.html" class="btn">الثيم الثاني</a>
+            <a href="second-theme.html" class="btn">الثيم الثاني</a>
           </div>
         </div>
         <div class="d-flex align-items-center">
@@ -149,9 +149,22 @@
           <li class="breadcrumb-item active" aria-current="page">المكونات</li>
         </ol>
       </nav>
-      <h4 class="page-title">لوحة الادارة</h4>
-      <!-- details -->
-      <section>
+
+      <!--  page tabs -->
+      
+      <nav class="nav page-tabs">
+        <a class="nav-link active" href="#"> تاب ١</a>
+        <a class="nav-link" href="#">تاب ٢</a>
+        <a class="nav-link" href="#">تاب ٣</a>
+        
+      </nav>
+      <!--  /page tabs -->
+      <div class="row">
+     <div class="page-content" >
+      
+           <h4 class="page-title">لوحة الادارة</h4>
+       <!-- details -->
+       <section>
         <div class="row">
           <div class="col-sm">
             <div class="card p-2 mt-1">
@@ -183,7 +196,7 @@
               <div class="information">
                 <div class="information-content">
                   <div class="information-title t">ارباح هذا الشهر</div>
-                  <div class="information-count">$30,000 </div>
+                  <div class="information-count">$30k </div>
                 </div>
 
                 <div class="information-icon"> <i class="bi bi-calendar-fill"></i></div>
@@ -215,25 +228,25 @@
                 <tbody>
                   <tr>
                     <th scope="row"> Jan </th>
-                    <td style="--size:0.2;"><span class="data"> $10,000
+                    <td style="--size:0.2;"><span class="data"> $10k
                       </span></td>
                   </tr>
                   <tr>
                     <th scope="row"> Mar </th>
-                    <td style="--size:0.4;"><span class="data"> $20,000
+                    <td style="--size:0.4;"><span class="data"> $20k
                       </span></td>
                   </tr>
                   <tr>
                     <th scope="row"> May </th>
-                    <td style="--size:0.6;">$30,000</td>
+                    <td style="--size:0.6;">$30k</td>
                   </tr>
                   <tr>
                     <th scope="row"> Jul </th>
-                    <td style="--size:0.8;">$40,000</td>
+                    <td style="--size:0.8;">$40k</td>
                   </tr>
                   <tr>
                     <th scope="row"> Sep </th>
-                    <td style="--size:1;">$100.000</td>
+                    <td style="--size:1;">$100k</td>
                   </tr>
                 </tbody>
               </table>
@@ -291,15 +304,14 @@
       </section>
       <!--/ charts -->
 
+
       <!-- table tols -->
       <section>
         <h5 class="section-title">المستخدمين</h5>
         <div class="row">
           <div class="d-flex align-self-center justify-content-between">
             <div>
-              <input class="form-control form-control-sm" style="width:250px;" type="text" placeholder="بحث ..."
-                aria-label="default input
-                  example">
+             
             </div>
             <div>
               <button type="button" class="btn btn-success btn-sm"><i class="bi bi-plus-lg"></i> اضافة </button>
@@ -439,23 +451,24 @@
           <li> <i class="bi bi-x-lg"></i> مستخدم عادي </li>
         </ul>
 
+
+        <div class="input-group my-2">
+          <input type="text" class="form-control form-control-sm" placeholder="أبحث في اسماء المستخدمين , البريد , تاريخ التسجيل , اسم دور المستخدم  ..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+        </div>
         <!--   / table tols -->
       </section>
 
-
+     
       <!--  list -->
       <section>
         <ul class="list-group list-row">
-          <!-- <div class="loading-overlay">
-              <div class="spinner-border text-dark" role="status">
-              </div>
-            </div> -->
+         
           <li class="list-group-item">
             <div class="d-flex justify-content-between px-1">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 
               <div class="dropdown">
-                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                <button class="btn items-action-button" type="button" id="dropdownMenuButton1"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-three-dots-vertical"></i>
                 </button>
@@ -468,33 +481,33 @@
               </div>
 
             </div>
-            <div class="columns-container action-able overflow-x-scroll">
-              <div class="row-columns">
-                <div class="column">
+            <div class="items-container action-able overflow-x-scroll">
+              <div class="row-items">
+                <div class="item">
 
-                  <div class="column-title">
+                  <div class="item-title">
                     سامي
 
                   </div>
-                  <div class="column-value img px-1 pt-1">
+                  <div class="item-value img px-1 pt-1">
                     <img src="imgs/avatar-male.png" width="60" height="60">
                   </div>
                 </div>
-                <div class="columns-nested">
+                <div class="items-nested">
 
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       الدور :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       مستخدم عادي
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       البريد :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       sami@gmail.com
                     </div>
                   </div>
@@ -502,15 +515,15 @@
                 </div>
 
 
-                <div class="flex-fill">
+                <div class="push-to-end">
 
 
                 </div>
-                <div class="column justify-content-center">
-                  <div class="column-title">
+                <div class="item justify-content-center">
+                  <div class="item-title">
                     تاريخ التسجيل
                   </div>
-                  <div class="column-value">
+                  <div class="item-value">
                     السبت 18-6-22
                   </div>
                 </div>
@@ -531,7 +544,7 @@
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 
               <div class="dropdown">
-                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                <button class="btn items-action-button" type="button" id="dropdownMenuButton1"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-three-dots-vertical"></i>
                 </button>
@@ -544,33 +557,33 @@
               </div>
 
             </div>
-            <div class="columns-container action-able overflow-x-scroll">
-              <div class="row-columns">
-                <div class="column">
+            <div class="items-container action-able overflow-x-scroll">
+              <div class="row-items">
+                <div class="item">
 
-                  <div class="column-title">
+                  <div class="item-title">
                     عبدالرحمن محمد
 
                   </div>
-                  <div class="column-value img px-1 pt-1">
+                  <div class="item-value img px-1 pt-1">
                     <img src="imgs/avatar-male.png" width="60" height="60">
                   </div>
                 </div>
-                <div class="columns-nested">
+                <div class="items-nested">
 
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       الدور :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       مشرف
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       البريد :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       dahem.mtr@gmail.com
                     </div>
                   </div>
@@ -578,15 +591,15 @@
                 </div>
 
 
-                <div class="flex-fill">
+                <div class="push-to-end">
 
 
                 </div>
-                <div class="column justify-content-center">
-                  <div class="column-title">
+                <div class="item justify-content-center">
+                  <div class="item-title">
                     تاريخ التسجيل
                   </div>
-                  <div class="column-value">
+                  <div class="item-value">
                     السبت 18-6-22
                   </div>
                 </div>
@@ -608,7 +621,7 @@
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 
               <div class="dropdown">
-                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                <button class="btn items-action-button" type="button" id="dropdownMenuButton1"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-three-dots-vertical"></i>
                 </button>
@@ -621,33 +634,33 @@
               </div>
 
             </div>
-            <div class="columns-container action-able overflow-x-scroll">
-              <div class="row-columns">
-                <div class="column">
+            <div class="items-container action-able overflow-x-scroll">
+              <div class="row-items">
+                <div class="item">
 
-                  <div class="column-title">
+                  <div class="item-title">
                     نواف بن تركي
 
                   </div>
-                  <div class="column-value img px-1 pt-1">
+                  <div class="item-value img px-1 pt-1">
                     <img src="imgs/avatar-male.png" width="60" height="60">
                   </div>
                 </div>
-                <div class="columns-nested">
+                <div class="items-nested">
 
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       الدور :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       مشرف
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       البريد :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       naeaf@gmail.com
                     </div>
                   </div>
@@ -655,15 +668,15 @@
                 </div>
 
 
-                <div class="flex-fill">
+                <div class="push-to-end">
 
 
                 </div>
-                <div class="column justify-content-center">
-                  <div class="column-title">
+                <div class="item justify-content-center">
+                  <div class="item-title">
                     تاريخ التسجيل
                   </div>
-                  <div class="column-value">
+                  <div class="item-value">
                     السبت 18-6-22
                   </div>
                 </div>
@@ -703,7 +716,7 @@
 
         <ul class="list-group list-row">
           <div class="loading-overlay">
-            <div class="spinner-border text-dark" role="status">
+            <div class="spinner-border" role="status">
             </div>
           </div>
           <li class="list-group-item">
@@ -711,7 +724,7 @@
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 
               <div class="dropdown">
-                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                <button class="btn items-action-button" type="button" id="dropdownMenuButton1"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-three-dots-vertical"></i>
                 </button>
@@ -724,33 +737,33 @@
               </div>
 
             </div>
-            <div class="columns-container action-able overflow-x-scroll">
-              <div class="row-columns">
-                <div class="column">
+            <div class="items-container action-able overflow-x-scroll">
+              <div class="row-items">
+                <div class="item">
 
-                  <div class="column-title">
+                  <div class="item-title">
                     سامي
 
                   </div>
-                  <div class="column-value img px-1 pt-1">
+                  <div class="item-value img px-1 pt-1">
                     <img src="imgs/avatar-male.png" width="60" height="60">
                   </div>
                 </div>
-                <div class="columns-nested">
+                <div class="items-nested">
 
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       الدور :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       مستخدم عادي
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       البريد :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       sami@gmail.com
                     </div>
                   </div>
@@ -758,15 +771,15 @@
                 </div>
 
 
-                <div class="flex-fill">
+                <div class="push-to-end">
 
 
                 </div>
-                <div class="column justify-content-center">
-                  <div class="column-title">
+                <div class="item justify-content-center">
+                  <div class="item-title">
                     تاريخ التسجيل
                   </div>
-                  <div class="column-value">
+                  <div class="item-value">
                     السبت 18-6-22
                   </div>
                 </div>
@@ -787,7 +800,7 @@
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 
               <div class="dropdown">
-                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                <button class="btn items-action-button" type="button" id="dropdownMenuButton1"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-three-dots-vertical"></i>
                 </button>
@@ -800,33 +813,33 @@
               </div>
 
             </div>
-            <div class="columns-container action-able overflow-x-scroll">
-              <div class="row-columns">
-                <div class="column">
+            <div class="items-container action-able overflow-x-scroll">
+              <div class="row-items">
+                <div class="item">
 
-                  <div class="column-title">
+                  <div class="item-title">
                     عبدالرحمن محمد
 
                   </div>
-                  <div class="column-value img px-1 pt-1">
+                  <div class="item-value img px-1 pt-1">
                     <img src="imgs/avatar-male.png" width="60" height="60">
                   </div>
                 </div>
-                <div class="columns-nested">
+                <div class="items-nested">
 
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       الدور :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       مشرف
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       البريد :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       dahem.mtr@gmail.com
                     </div>
                   </div>
@@ -834,15 +847,15 @@
                 </div>
 
 
-                <div class="flex-fill">
+                <div class="push-to-end">
 
 
                 </div>
-                <div class="column justify-content-center">
-                  <div class="column-title">
+                <div class="item justify-content-center">
+                  <div class="item-title">
                     تاريخ التسجيل
                   </div>
-                  <div class="column-value">
+                  <div class="item-value">
                     السبت 18-6-22
                   </div>
                 </div>
@@ -864,7 +877,7 @@
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 
               <div class="dropdown">
-                <button class="btn columns-action-button" type="button" id="dropdownMenuButton1"
+                <button class="btn items-action-button" type="button" id="dropdownMenuButton1"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-three-dots-vertical"></i>
                 </button>
@@ -877,33 +890,33 @@
               </div>
 
             </div>
-            <div class="columns-container action-able overflow-x-scroll">
-              <div class="row-columns">
-                <div class="column">
+            <div class="items-container action-able overflow-x-scroll">
+              <div class="row-items">
+                <div class="item">
 
-                  <div class="column-title">
+                  <div class="item-title">
                     نواف بن تركي
 
                   </div>
-                  <div class="column-value img px-1 pt-1">
+                  <div class="item-value img px-1 pt-1">
                     <img src="imgs/avatar-male.png" width="60" height="60">
                   </div>
                 </div>
-                <div class="columns-nested">
+                <div class="items-nested">
 
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       الدور :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       مشرف
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       البريد :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       naeaf@gmail.com
                     </div>
                   </div>
@@ -911,15 +924,15 @@
                 </div>
 
 
-                <div class="flex-fill">
+                <div class="push-to-end">
 
 
                 </div>
-                <div class="column justify-content-center">
-                  <div class="column-title">
+                <div class="item justify-content-center">
+                  <div class="item-title">
                     تاريخ التسجيل
                   </div>
-                  <div class="column-value">
+                  <div class="item-value">
                     السبت 18-6-22
                   </div>
                 </div>
@@ -983,7 +996,7 @@
             </div>
 
             <div class="dropdown">
-              <button class="btn columns-action-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              <button class="btn items-action-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 <i class="bi bi-three-dots-vertical"></i>
               </button>
@@ -998,30 +1011,30 @@
           </div>
 
           <div class="card-body pb-2 px-2">
-            <div class="columns-container ">
-              <div class="row-columns">
-                <div class="column">
+            <div class="items-container ">
+              <div class="row-items">
+                <div class="item">
 
 
-                  <div class="column-value img px-1 pt-1">
+                  <div class="item-value img px-1 pt-1">
                     <img src="imgs/avatar-male.png" width="60" height="60">
                   </div>
                 </div>
-                <div class="columns-nested">
+                <div class="items-nested">
 
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       الدور :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       مشرف
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="column-title">
+                  <div class="item">
+                    <div class="item-title">
                       البريد :
                     </div>
-                    <div class="column-value">
+                    <div class="item-value">
                       dahem.mtr@gmail.com
 
                     </div>
@@ -1030,28 +1043,28 @@
                 </div>
 
 
-                <div class="flex-fill">
+                <div class="push-to-end">
 
 
                 </div>
-                <div class="column justify-content-center">
-                  <div class="column-title">
+                <div class="item justify-content-center">
+                  <div class="item-title">
                     تاريخ التسجيل
                   </div>
-                  <div class="column-value">
+                  <div class="item-value">
                     السبت 18-6-22
                   </div>
                 </div>
 
               </div>
-              <div class="row-columns">
+              <div class="row-items">
 
 
-                <div class="column">
-                  <div class="column-title">
+                <div class="item">
+                  <div class="item-title">
                     الصلاحيات :
                   </div>
-                  <div class="column-value">
+                  <div class="item-value">
                     ادارة المستخدمين -
                     ادارة المستودعات -
                     ادارة الطلبات
@@ -1181,40 +1194,45 @@
       <!-- /form-->
 
       <!-- colors-text -->
-      <h5 class="section-title"> الوان </h5>
+      <section >
+        <h5 class="section-title"> الوان </h5>
 
-      <div class="row">
-
-        <div class="col-md-6">
-          <p class="text-primary">.text-primary</p>
-          <p class="text-secondary">.text-secondary</p>
-          <p class="text-success">.text-success</p>
-          <p class="text-danger">.text-danger</p>
-          <p class="text-warning bg-dark">.text-warning</p>
-          <p class="text-info bg-dark">.text-info</p>
-          <p class="text-light bg-dark">.text-light</p>
-          <p class="text-dark">.text-dark</p>
-          <p class="text-muted">.text-muted</p>
-          <p class="text-white bg-dark">.text-white</p>
-          <p class="text-black-50">.text-black-50</p>
-          <p class="text-white-50 bg-dark">.text-white-50</p>
+        <div class="row">
+  
+          <div class="col-md-6">
+            <p class="text-primary">.text-primary</p>
+            <p class="text-secondary">.text-secondary</p>
+            <p class="text-success">.text-success</p>
+            <p class="text-danger">.text-danger</p>
+            <p class="text-warning bg-dark">.text-warning</p>
+            <p class="text-info bg-dark">.text-info</p>
+            <p class="text-light bg-dark">.text-light</p>
+            <p class="text-dark">.text-dark</p>
+            <p class="text-muted">.text-muted</p>
+            <p class="text-white bg-dark">.text-white</p>
+            <p class="text-black-50">.text-black-50</p>
+            <p class="text-white-50 bg-dark">.text-white-50</p>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+            <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+            <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+            <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-          <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-          <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-          <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-          <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-          <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
-          <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-          <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-          <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
-          <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-          <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
-        </div>
-      </div>
+      </section>
       <!-- / colors-text -->
 
+     </div>
+    </div>
+     
     </div>
   </div>
   <!-- / app-wrapper -->
