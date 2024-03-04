@@ -9,18 +9,20 @@
   .nav-link {
     display: flex;
     text-align: center;
+    white-space: nowrap;
     justify-content: center;
-    padding-inline: 6px;
+    padding-inline: 10px;
+    margin-inline:3px ;
+    margin-bottom: 5px;
+    padding: 0.2rem 1rem;
+    border-radius: 6px;
     color: $page-tab-color;
     background-color: $page-tab-bg-color;
-    &.active {
-      border-bottom: solid 2px;
-      border-bottom-color: $page-tab-border-bottom-color;
-      color: darken($page-tab-color, 10%);
+    &.active , &:hover {
+      background-color: $page-tab-bg-color-active ;
+      color: $page-tab-color-active;
     }
-    &:hover {
-      color: darken($page-tab-color, 10%);
-    }
+   
   }
 }
 
@@ -29,17 +31,13 @@ body.dark-mode {
     background-color: transparent;
     .nav-link {
       // background-color: silver;
-      padding-inline: 6px;
       color: $primary-color;
       background-color: transparent;
-      &.active {
-        border-bottom: solid 2px;
-        border-bottom-color: $primary-color;
+      &.active , &:hover {
         color: darken($primary-color, 10%);
+        background-color: $dark-bg-color-second;
       }
-      &:hover {
-        color: darken($primary-color, 10%);
-      }
+      
     }
   }
 }

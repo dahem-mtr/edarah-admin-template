@@ -29,7 +29,7 @@ body.dark-mode {
   .form-control,
   .form-select,
   .form-check-input {
-    background-color: black !important;
+    background-color: $dark-bg-color !important;
 
     border-color: $dark-border-color !important;
     color: white;

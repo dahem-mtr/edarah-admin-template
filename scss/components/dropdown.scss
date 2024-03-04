@@ -14,10 +14,6 @@
       font-size: $dropdown-link-size;
       color: $dropdown-link-color;
   
-      i,
-      span {
-        color: $dropdown-icons-color;
-      }
   
       &:hover {
         background-color: #f1f1f1;
@@ -49,12 +45,12 @@ body.dark-mode {
   }
 
    .dropdown-menu li  {
-    a ,i {
+    a  {
       background-color: transparent ;
       color:$dark-text-color-second ;
 
     }
-    &:hover a ,&:hover i {
+    &:hover a {
       color: $dark-text-color;
 
     }
